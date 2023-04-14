@@ -5,7 +5,8 @@ from awigen_skip_logic import SkipLogic
 if __name__ == '__main__':
     # Create a Pandas Excel writer using XlsxWriter as the engine.
 
-    phase1 = pd.read_csv("C:/Users/A0072059/Documents/Awigen1/all_sites_20_12_22.txt", sep=',')
+    
+    phase1 = pd.read_csv(path + "/all_sites_20_12_22.txt", sep=',')
 
     writer = pd.ExcelWriter('awigen_data_val.xlsx', engine='xlsxwriter')
 
